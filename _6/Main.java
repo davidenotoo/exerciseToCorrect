@@ -81,13 +81,16 @@ public class Main {
         // Math.round() arrotonda una variabile al numero intero più vicino;
         System.out.println(ourValue + " after using round=" + Math.round(ourValue));
 
-        // Math.pow(variabile, esponente) eleva la variabile per l'esponente che andiamo ad inserire dopo la virgola (2 in questo caso);
+        // Math.pow(variabile, esponente) eleva la variabile per l'esponente
+        // che andiamo ad inserire dopo la virgola (2 in questo caso);
         System.out.println(ourValue + " after using powerOf with the value of 2=" + Math.pow(ourValue, 2));
 
-        // Math.pow(variabile, esponente) eleva la variabile per l'esponente che andiamo ad inserire dopo la virgola (3 in quest'altro);
+        // Math.pow(variabile, esponente) eleva la variabile per l'esponente
+        // che andiamo ad inserire dopo la virgola (3 in quest'altro);
         System.out.println(ourValue + " after using powerOf with the value of 3=" + Math.pow(ourValue, 3));
 
-        // Math.random() genera un numero decimale random, si può fixare per numeri interi e anche per generare numeri in un intervallo ex. da 0 a 100;
+        // Math.random() genera un numero decimale casuale compreso tra 0 e 1,
+        // si può fixare per numeri interi e anche per generare numeri in un intervallo ex. da 0 a 100;
         System.out.println(ourValue + " times random =" + Math.random() * ourValue);
     }
 }
