@@ -121,8 +121,15 @@ public class Main {
         int age = 50;
 
         // operazione di sottrazione;
-        age-= 50; // si poteva anche scrivere age -= age;
+        age -= 50; // si poteva anche scrivere age -= age;
         System.out.println(age);
+
+        // stessa operazione ma in modo differente
+        int secondAge = 50;
+        secondAge -= 10;
+        secondAge /= 4;
+        secondAge -= 10;
+        System.out.println(secondAge);
     }
 
     /**
@@ -132,8 +139,8 @@ public class Main {
     private static void playAroundWithModulus() {
         System.out.println("\nModulus testing!:");
 
-        int value = 26;   // <--- change this value
-        int modulus = 3; // <--- and this value to see the results of modulus
+        int value = 26;
+        int modulus = 3;
 
         System.out.println("Modulus calculation, " + value + " % " + modulus +
                 "=" + value % modulus);
