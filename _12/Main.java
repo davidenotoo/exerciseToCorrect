@@ -29,11 +29,12 @@ public class Main {
     public static double exercise1(String text, double expectedScore) {
         double yourScore = 0;
 
+        // metodo che restituisce il numero di caratteri e spazi presenti in una stringa o in un'array
         yourScore = text.length();
 
-        if (yourScore > 20) {
-            yourScore = 20;
-        }
+        // metodo che
+        yourScore = Math.min(yourScore, 20);
+
         if (text.contains("a")) {
             yourScore -= 5;
         }
@@ -67,17 +68,17 @@ public class Main {
     public static double exercise2(String mealType, double weight, double expectedScore) {
         double yourMealScore = 0;
 
-        // Start your code here
-        if (mealType == "sandwich") {
+        // ho usato il metodo equals invece di ` mealType == "sandwich" `
+        if (mealType.equals("sandwich")) {
             yourMealScore = 5 * weight;
         }
-        if (mealType == "soup") {
+        if (mealType.equals("soup")) {
             yourMealScore = 3 * weight;
         }
-        if (yourMealScore < 5) {
-            yourMealScore = 5;
-        }
-        // End it here
+
+        // il metodo Math.max() imposta il valore iniziale, in questo caso, a 5;
+        yourMealScore = Math.max(yourMealScore, 5);
+
 
         System.out.print("Expected score=" + expectedScore + ", actual score=" + yourMealScore);
         if (expectedScore != yourMealScore) {
