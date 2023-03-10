@@ -32,7 +32,10 @@ public class Main {
         // metodo che restituisce il numero di caratteri e spazi presenti in una stringa o in un'array
         yourScore = text.length();
 
-        // metodo che
+        /*
+         Math.min è un metodo che verifica il valore minore fra i 2 inseriti, quindi se yourScore
+        è superiore a 20 viene considerato solo il 20(dopo la virgola);
+         */
         yourScore = Math.min(yourScore, 20);
 
         if (text.contains("a")) {
@@ -76,7 +79,10 @@ public class Main {
             yourMealScore = 3 * weight;
         }
 
-        // il metodo Math.max() imposta il valore iniziale, in questo caso, a 5;
+        /*
+         Math.max è un metodo che verifica il valore maggiore fra i 2 inseriti, quindi se yourMalScore
+        è inferiore a 5 viene considerato solo il 5(dopo la virgola);
+         */
         yourMealScore = Math.max(yourMealScore, 5);
 
 
