@@ -29,7 +29,7 @@ public class Main {
     public static double exercise1(String text, double expectedScore) {
         double yourScore = 0;
 
-        // metodo che restituisce il numero di caratteri e spazi presenti in una stringa o in un'array
+        // metodo che restituisce il numero di caratteri e spazi presenti in una stringa o in un'array;
         yourScore = text.length();
 
         /*
@@ -38,9 +38,14 @@ public class Main {
          */
         yourScore = Math.min(yourScore, 20);
 
+        // il metodo .contains() verifica se alla variabile è presente qualcosa che passiamo come parametro;
         if (text.contains("a")) {
             yourScore -= 5;
         }
+
+        // 2 metodi:
+        // ".toLowerCase()" restituisce na stringa tutta in minuscolo;
+        // ".equals()" verifica se la stringa "text" e la stringa passata come parametro(la stessa in minuscolo) sono uguali;
         if (text.equals(text.toLowerCase())) {
             yourScore += 10;
         }
