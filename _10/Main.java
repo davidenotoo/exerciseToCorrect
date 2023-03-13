@@ -58,7 +58,10 @@ public class Main {
         double eurosInPocket = 7.5;
         double eurosForEntry = 10;
 
-        if (eurosInPocket >= eurosForEntry && age >= 18 && shoeType == "fancy") {
+        // ho sostituito (shoeType == "fancy") con (shoeType.equals("fancy"))
+        // scusami ahahah 😄
+
+        if (eurosInPocket >= eurosForEntry && age >= 18 && shoeType.equals("fancy")) {
             System.out.println("Come in");
         }else{
             System.out.println("stay out");
@@ -130,7 +133,7 @@ public class Main {
         if (carIsDrivingFromLeftToRight^carIsDrivingFromRightToLeft){
             System.out.println("safe");
         }else{
-            System.out.println("CRASH!");
+            System.out.println("CRASH! or No cars"); // aggiunto "or no cars" al messaggio;
         }
     }
 }
