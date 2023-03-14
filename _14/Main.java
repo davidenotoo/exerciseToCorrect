@@ -164,14 +164,14 @@ public class Main {
         //ciclo for per incrementare il MOLTIPLICANDO;
         for (int timesTableNumber = 1; timesTableNumber <= 10; timesTableNumber++) {
 
-            // controllo dell'apostrofo sulle tabelline dell'1 e dell'8;
+            // BONUS: controllo dell'apostrofo sulle tabelline dell'1 e dell'8, scusa Francesco ma dovevo farlo 😄;
             if (timesTableNumber == 1 || timesTableNumber == 8) {
                 System.out.println("\nTabellina dell'" + timesTableNumber + ":");
             } else {
                 System.out.println("\nTabellina del " + timesTableNumber + ":");
             }
 
-            // ciclo for annidato incrementare il MOLTIPLICATORE;
+            // ciclo for annidato per incrementare il MOLTIPLICATORE;
             for (int i = 1; i <= 10; i++) {
                 System.out.println(i + " x " + timesTableNumber + " = " + (i * timesTableNumber));
             }
