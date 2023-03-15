@@ -114,7 +114,7 @@ public class Main {
      * A3: FOR I per partire dal primo e fermare la i<=80;
      *
      * Q4: We want to read a file 100 lines at a time, without loading the full file into our program
-     * A4: DO per caricare le prime 100, nel WHILE possiamo per esempio inserire un evento per vedere se l'utente vuole vedere;
+     * A4: DO per caricare le prime 100, nel WHILE possiamo per esempio inserire un evento per vedere se l'utente vuole vedere il next step;
      */
 
 }
