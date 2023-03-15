@@ -73,6 +73,8 @@ public class Main {
         // fintanto che ho più di 0 sterline (vale anche con un numero compreso tra 0 e 999 in quanto il counter decrementa di 1000 ogni volta);
         while (remainingPoundsToSell > 0) {
 
+            daysToSell++; // aggiungo 1 al counter dei giorni;
+
             // se il tasso di cambio è maggiore di 1.15;
             if (poundToEuroExchangeRate >= 1.15) {
                 remainingPoundsToSell -= maxPoundsToSellPerDay; // vendo, quindi tolgo 1000 al mio portafoglio;
@@ -85,7 +87,6 @@ public class Main {
                 System.out.println("Giorno n° " + daysToSell + " il tasso di cambio è " + Math.round(poundToEuroExchangeRate*100.0)/100.0  + " quindi NON POSSO vendere.");
             }
 
-            daysToSell++; // aggiungo 1 al counter dei giorni;
             poundToEuroExchangeRate = 1 + (Math.random() * 0.2); // ricalcolo ad ogni giorno il tasso di cambio;
 
 
