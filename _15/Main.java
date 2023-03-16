@@ -32,7 +32,7 @@ public class Main {
         }
 
         // condizione 1B:
-        while (currentInvestmentValueEuros <= 15_000 || yearsPast <= 5) {
+        while (currentInvestmentValueEuros <= 15_000 && yearsPast <= 5) {
             System.out.println("Investment value = €" + currentInvestmentValueEuros + " after " + yearsPast++ + " years" +
                     ", interest this year €" + interestGainedThisYearEuros);
             double previousYearsInvestment = currentInvestmentValueEuros;
