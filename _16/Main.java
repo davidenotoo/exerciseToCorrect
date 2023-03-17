@@ -42,29 +42,36 @@ public class Main {
      *    3) If the name contains any numbers, instead of returning the name, return "Invalid"
      */
 
-    // funzione che ordina,
-    private static String ordinatore(String name){
-        String nomiOrdinati = name.trim().toUpperCase(); // rimuovo gli spazi extra e rendo maiuscolo;
-        if (nomiOrdinati.matches(".*\\d.*")){ // espressione regolare del metodo matches() per pescare i numeri;
-            nomiOrdinati = "invalid"; // dichiarazione di nome utente non valido se sono presenti numeri;
-        }
-        return nomiOrdinati; // la funzione tirerà fuori questo valore;
-    }
+
     private static void exercise2() {
         System.out.println("\nExercise 2:");
         List<String> names = Arrays.asList("Alan   ", "Alice   ", "Ant0ni0   ", "  Aziz");
 
+        // richiamo la funzione ordinatore e passo come argomento la lista stessa.
+        ordinatore(names);
+
+        // stampo la lista ordinata non come array;
         for (String name : names) {
-            // nuova stringa che viene dichiarata utilizzando il metodo scritto prima,
-            // passando come argomento la lista "names";
-            String risultato = ordinatore(name);
-            System.out.println(risultato);
+            System.out.println(name);
+        }
+    }
+    private static void ordinatore(List<String> names) {
+        // ciclo che permette di iterare nella lista, rimuovere gli spazi, maiuscolare tutto e
+        // se contiene numeri trasforma il nome in "invalid", altrimenti lo scambia .set() col nome corretto;
+        for (int i = 0; i < names.size(); i++) {
+            String nomeAttuale = names.get(i);
+            String nomeCorretto = nomeAttuale.trim().toUpperCase();
+            if (nomeCorretto.matches(".*\\d+.*")) {
+                names.set(i, "Invalid");
+            } else {
+                names.set(i, nomeCorretto);
+            }
         }
     }
 
-    /**
-     * 3: Write a function that prints out every variable seen in the code. It should not return anything
-     */
+        /**
+         * 3: Write a function that prints out every variable seen in the code. It should not return anything
+         */
     private static void exercise3() {
         System.out.println("\nExercise 3:");
 
